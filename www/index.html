@@ -5,11 +5,19 @@
     <meta charset="utf-8" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
 
     <!-- JS dependencies (order matters!) -->
     <script src="scripts/platformOverrides.js"></script>
     <script src="lib/angular/angular.js"></script>
+    <script src="Scripts/jquery-1.11.3.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
     <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="Scripts/Utils.js"></script>
 
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
@@ -91,7 +99,7 @@
 
 <body>
     <!-- Cordova reference -->
-    <script src="cordova.js"></script>
+    <!--<script src="cordova.js"></script>-->
     <script src="scripts/index.js"></script>
     <!-- -->
 
@@ -104,11 +112,11 @@
             <ons-toolbar modifier="transparent"></ons-toolbar>
 
             <ons-list class="menu-list">
-                <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+                <ons-list-item class="menu-item" onclick="javascript:openPage('page1.html');">
                     <ons-icon icon="fa-home"></ons-icon>
                     Home
                 </ons-list-item>
-                <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+                <ons-list-item class="menu-item" onclick="javascript:openPage('cardapio.html');">
                     <ons-icon icon="fa-plus"></ons-icon>
                     Adicionar item
                 </ons-list-item>
@@ -153,7 +161,17 @@
                 </div>
                 <div class="center">Restaurante do João</div>
             </ons-toolbar>
+            <ons-row>
+                <ons-col>
+                    <ons-page>
+                        <div class="row">
+                            <div class="col-sm-12">
 
+                            </div>
+                        </div>
+                    </ons-page>
+                </ons-col>
+            </ons-row>
             <!--<ons-row style="margin-top: 100px; text-align: center;">
                 <ons-col>
                     <ons-button modifier="light" ng-click="menu.toggleMenu()">
