@@ -28,6 +28,7 @@ function openPage(page)
 	}).done(function(response)
 	{
 		//response = "<link rel='css/bootstrap.css' /><link rel='css/bootstrap-theme.css' /><script src='js/bootstrap.js'></script>" + response;
+		$("#divContent").html("");
 		$("#divContent").html(response);
 	});
 }
@@ -44,4 +45,7 @@ $(document).ready(function(){
 		
 		openPage(htmlFile);
 	});
+	
+	//open home page when app starts
+	openPage("home");
 });
