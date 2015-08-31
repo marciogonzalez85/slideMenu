@@ -30,6 +30,8 @@ function openPage(page)
 		//response = "<link rel='css/bootstrap.css' /><link rel='css/bootstrap-theme.css' /><script src='js/bootstrap.js'></script>" + response;
 		$("#divContent").html("");
 		$("#divContent").html(response);
+		
+		$(".background-el").removeClass("active");
 	}).fail(function(jqXHR, textStatus){
 		alert("Erro ao abrir página");
 	});
