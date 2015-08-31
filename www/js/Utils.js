@@ -35,6 +35,17 @@ function openPage(page)
 	});
 }
 
+function configScreen()
+{
+	var body = document.body,
+    html = document.documentElement;
+
+	var height = Math.max( body.scrollHeight, body.offsetHeight, 
+						   html.clientHeight, html.scrollHeight, html.offsetHeight );
+						   
+    $("#divContent").css({"min-height": height + "px"});
+}
+
 $(document).ready(function(){
 
   $('[data-toggle=offcanvas]').click(function() {
@@ -46,6 +57,8 @@ $(document).ready(function(){
 		var htmlFile = $(this).attr("id");
 		
 		openPage(htmlFile);
+		
+		configScreen();
 	});
 	
 	//open home page when app starts
