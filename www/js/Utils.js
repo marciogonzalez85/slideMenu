@@ -27,7 +27,7 @@ function openPage(page)
 		type: "get"
 	}).done(function(response)
 	{
-		response = "<link rel='css/bootstrap.css' /><link rel='css/bootstrap-theme.css' /><script src='Scripts/bootstrap.js'></script>" + response;
+		//response = "<link rel='css/bootstrap.css' /><link rel='css/bootstrap-theme.css' /><script src='js/bootstrap.js'></script>" + response;
 		$("#divContent").html(response);
 	});
 }

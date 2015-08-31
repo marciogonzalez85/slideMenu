@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#000000;
+    /*background-color:#000000;
     background-image:linear-gradient(top, #000000 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #000000 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #000000 0%, #E4E4E4 51%);
@@ -36,6 +36,10 @@ body {
         color-stop(0.51, #000000)
     );
     background-attachment:fixed;
+	*/
+	/*background-image: url("../img/background.jpg")  !important;*/
+    background-attachment: fixed;
+    background-size: cover;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -120,9 +124,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center center;   
     */
-    background-image: url("../img/background.jpg")  !important;
-    background-attachment: fixed;
-    background-size: cover;
+	background-color: #fff !important;
 }
 
 .transparent_class {
