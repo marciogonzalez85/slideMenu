@@ -123,8 +123,8 @@ h1 {
     background-size:   cover;                   
     background-repeat: no-repeat;
     background-position: center center;   
-    */
-	background-color: #fff !important;
+   
+	background-color: #fff !important; */
 	margin: 60px 0 0 10px;
 	min-height: 100%;
 }
