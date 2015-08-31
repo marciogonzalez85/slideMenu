@@ -21,7 +21,7 @@ function openPage(page)
 	{
 		return false;
 	}
-
+	
 	$.ajax({
 		url: 'html/' + page + '.html',
 		type: "get"
@@ -31,7 +31,7 @@ function openPage(page)
 		$("#divContent").html("");
 		$("#divContent").html(response);
 	}).fail(function(jqXHR, textStatus){
-		navigator.notification.alert("Erro ao abrir p√°gina", null);
+		alert("Erro ao abrir p·gina");
 	});
 }
 
