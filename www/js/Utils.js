@@ -35,6 +35,38 @@ function openPage(page)
 	});
 }
 
+/**********************************/
+function alertDismissed() {
+	console.log("Inside alertDismissed");
+}
+function onConfirm(){
+  console.log("Inside onConfirmation");
+}
+function showAlert() {
+	navigator.notification.alert(
+		'Sample native alert message',  
+		alertDismissed,         
+		'Sample native alert title',            
+		'alert'                  
+	);
+}
+function showConfirmation(){
+  navigator.notification.confirm(
+		  'Sample native confirmation',  
+		  onConfirm,              
+		  'Sample confirmation title',            
+		  'Confirm'          
+	  );
+}
+function playBeep() {
+	navigator.notification.beep(3);
+}
+function vibrate() {
+	navigator.notification.vibrate(2000);
+}
+
+/**********************************/
+
 $(document).ready(function(){
 
   $('[data-toggle=offcanvas]').click(function() {
