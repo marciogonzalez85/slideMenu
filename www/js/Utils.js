@@ -84,4 +84,6 @@ $(document).ready(function(){
 	
 	//open home page when app starts
 	openPage("home");
+
+	$("#linkVibration").click(vibrate());
 });
