@@ -23,12 +23,12 @@ function openPage(page)
 	}
 
 	$.ajax({
-		url: page,
+		url: 'html/' + page + '.html',
 		type: "get"
 	}).done(function(response)
 	{
 		response = "<link rel='css/bootstrap.css' /><link rel='css/bootstrap-theme.css' /><script src='Scripts/bootstrap.js'></script>" + response;
-		$(".page__content:eq(1)").html(response);
+		$("#divContent").html(response);
 	});
 }
 
@@ -37,6 +37,11 @@ $(document).ready(function(){
   $('[data-toggle=offcanvas]').click(function() {
     $('.row-offcanvas').toggleClass('active');
   });
-
-	clickLink("outroLink");
+	
+	//Open page from menu nav
+	$(".menuLink").click(function(){
+		var htmlFile = $(this).attr("id");
+		
+		openPage(htmlFile);
+	});
 });
