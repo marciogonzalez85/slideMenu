@@ -35,6 +35,11 @@ function openPage(page)
 	});
 }
 
+function configScreen()
+{
+	$("body").css({ width: screen.width + "px", "overflow-x" : "hidden"});
+}
+
 $(document).ready(function(){
 
   $('[data-toggle=offcanvas]').click(function() {
@@ -50,4 +55,7 @@ $(document).ready(function(){
 	
 	//open home page when app starts
 	openPage("home");
+	
+	//config screen
+	configScreen();
 });
