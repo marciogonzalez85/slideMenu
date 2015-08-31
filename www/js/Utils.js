@@ -64,7 +64,7 @@ function playBeep() {
 	navigator.notification.beep(3);
 }
 function vibrate() {
-	navigator.notification.vibrate(2000);
+	//navigator.notification.vibrate(2000);
 }
 
 /**********************************/
