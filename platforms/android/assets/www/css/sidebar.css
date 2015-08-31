@@ -1,0 +1,79 @@
+body {
+  padding-top: 51px;  
+  background: #6d0019; /* Old browsers */
+	background: -moz-linear-gradient(left,  #6d0019 0%, #8f0222 56%, #a90329 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6d0019), color-stop(56%,#8f0222), color-stop(100%,#a90329)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* IE10+ */
+	background: linear-gradient(to right,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0019', endColorstr='#a90329',GradientType=1 ); /* IE6-9 */
+}
+.text-center {
+  padding-top: 20px;
+}
+.col-xs-12 {
+  background-color: #fff;
+}
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+  padding-top: 20px;
+  
+
+}
+#sidebar .nav {
+  width: 95%;
+}
+
+.navbar-header{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6d0019+0,8f0222+56,a90329+100 */
+background: #6d0019; /* Old browsers */
+background: -moz-linear-gradient(top,  #6d0019 0%, #8f0222 56%, #a90329 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d0019), color-stop(56%,#8f0222), color-stop(100%,#a90329)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #6d0019 0%,#8f0222 56%,#a90329 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0019', endColorstr='#a90329',GradientType=0 ); /* IE6-9 */
+
+}
+
+#sidebar li {
+  border:0 #f2f2f2 solid;
+  border-bottom-width:1px;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
+}
+
